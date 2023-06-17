@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../src/assets/fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../src/assets/fonts/Merriweather-Black.ttf");
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    height: 62px;
+
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #191411;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background: linear-gradient(95.61deg, #ac6115 0%, #9e7c15 100%);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    color: gray;
+    background: #343434;
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    height: 1080px;
+
+    background-color: #191411;
+}
