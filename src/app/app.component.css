@@ -279,6 +279,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .menu__button-text {
@@ -353,6 +354,13 @@
     width: 1200px;
 
     margin-bottom: 180px;
+
+
+}
+
+.menu {
+    background-image: url("../assets/images/burgers_bg.png");
+
 }
 
 .menu__dollar {
