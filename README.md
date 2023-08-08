@@ -1,7 +1,14 @@
-# BurgersAngular
+# Проект Burgers Angular
 
-Start: `ng serve` (Navigate to `http://localhost:4200/`)
+Проект выполнен в рамках обучающего курса по frontend-разработке. 
+Всю верстку я выполняла сама (не по курсу) по технологии БЭМ.
 
-Build: `ng build  --base-href "https://juliaavramenko.github.io/burgers-angular/"`
+В проекте использован JavaScript, анимация, валидация.
 
-Deploy: `npx angular-cli-ghpages --dir=dist\\burgers-angular`
+Проект выполнен на Angular
+
+Figma:https://www.figma.com/file/Jf8yYmDagJ1UI9Fav3kSKC/landing?type=design&node-id=252-588&mode=dev
+GitHub Pages: https://juliaavramenko.github.io/burgers-angular/
+
+
+

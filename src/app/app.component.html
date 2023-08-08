@@ -36,7 +36,7 @@
           мраморной говядины.</p>
         <button class="button" id="main-button" (click)="scrollTo(menu)">Смотреть меню</button>
       </div>
-      <img src="./assets/images/main_burger.png" alt="burger" class="info__image">
+      <img src="./assets/images/main_burger.png" alt="burger" class="info__image" [ngStyle]="mainImageStyle">
     </div>
   </section>
 </section>
@@ -82,7 +82,9 @@
       <div class="menu__cards">
         <article class="menu__card" *ngFor="let product of productsData">
           <div class="menu__card-container">
+
             <img src="{{product.image}}" alt="" class="menu__image">
+
             <h3 class="menu__card-title">{{product.title}}</h3>
             <p class="menu__text">{{product.text}}</p>
             <div class="menu__card-wrapper">
@@ -111,7 +113,7 @@
   <section class="order" id="order" #order>
     <div class="order__container">
       <h2 class="order__title">оформление заказа</h2>
-      <img src="./assets/images/order_image.png" alt="" class="order__image">
+      <img src="./assets/images/order_image.png" alt="" class="order__image" [ngStyle]="orderImageStyle">
       <div class="order__wrapper">
         <div class="order__form-container">
           <h3 class="order__form-title">Заполните все данные и наш менеджер свяжется с вами для
@@ -151,3 +153,7 @@
     <p class="footer__text">Все права защищены</p>
   </div>
 </footer>
+
+<div class="loader" [class]="{'showed': loaderShowed}" *ngIf="loader">
+  <lottie-player src="./assets/burger.json" background="transparent" speed="1.5" autoplay></lottie-player>
+</div>

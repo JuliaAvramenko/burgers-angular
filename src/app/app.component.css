@@ -384,10 +384,18 @@
     color: #757575;
 }
 
+
+
 .menu__image {
     width: 324px;
     height: 250px;
+    transition: all .5s ease;
 }
+
+.menu__image:hover {
+    transform: scale(1.1);
+}
+
 
 .menu__price-wrapper {
     display: flex;
@@ -510,4 +518,28 @@
     background-position: top center;
 
 
+}
+
+.loader {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #191411;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.loader lottie-player {
+    display: block;
+    width: 300px;
+    height: 300px;
+
+}
+
+.loader.showed {
+    opacity: 1;
 }
